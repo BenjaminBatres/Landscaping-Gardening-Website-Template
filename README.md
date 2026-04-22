@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🌿 Lawnscaping & Gardening Website Template
+![LawnMowigTemplate](./src/app/assets/ReadMe-img.png)
 
-## Getting Started
+A responsive and modern website template built for landscaping, lawn care, and gardening businesses. This project showcases a clean UI, smooth animations, and a structured layout designed to improve user experience and drive customer engagement.
 
-First, run the development server:
+### ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Fully responsive design for mobile, tablet, and desktop
+* Service showcase section
+* Testimonials and customer trust sections
+* Contact form layout for lead generation
+* Smooth scroll and subtle animations
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🛠 Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* Next.js
+* Tailwind CSS
+* JavaScript / React
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🎯 Purpose
 
-## Learn More
+This project was created to practice building real-world business websites with a focus on layout structure, responsiveness, and modern UI/UX design.
 
-To learn more about Next.js, take a look at the following resources:
+### 📌 Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This is a front-end template and can be extended with a backend for booking systems, form handling, or CMS integration.
