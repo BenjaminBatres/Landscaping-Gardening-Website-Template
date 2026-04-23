@@ -7,7 +7,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export default function NotFound() {
   return (
-    <div className="h-screen ">
+    <div className="h-screen">
       <Navbar />
       <div className="absolute inset-0 flex flex-col items-center justify-center px-5">
         <div className="relative mb-4">

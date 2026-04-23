@@ -38,7 +38,7 @@ export default function HowWeWorkSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="flex flex-col laptop:flex-row justify-between laptop:items-center gap-2.5 laptop:gap-0 mb-12"
+          className="flex flex-col laptop:flex-row justify-between laptop:items-center gap-2.5 laptop:gap-0 mb-5 tablet:mb-10"
         >
           <div className="laptop:w-1/2">
             <h3 className="text-AltPrimary text-[15px] tablet:text-base font-medium mb-2">
@@ -59,7 +59,7 @@ export default function HowWeWorkSection() {
           </div>
         </motion.div>
 
-        <div className="flex flex-col-reverse items-center tablet:flex-row gap-15">
+        <div className="flex flex-col-reverse items-center tablet:flex-row gap-7.5 tablet:gap-15">
           <div className="space-y-6 tablet:w-1/2">
             {howWeWorkInfo.map((info, id) => (
               <div key={id} className="border-b border-[#e3e3e3]">
@@ -89,6 +89,7 @@ export default function HowWeWorkSection() {
             <div className="absolute top-[60%] laptop:top-[63%] inset-0 ">
               <div className="bg-AltPrimary py-5 px-4 w-[90%] rounded-lg max-w-200 mx-auto">
                 <h2 className="text-Mint text-[40px] font-medium">
+                  <span className="sm:hidden">1200+</span>
                   <Counter max={1200} ref={ref} symbol={"+"} />
                 </h2>
                 <p className="text-Secondary text-[13px] laptop:text-sm">

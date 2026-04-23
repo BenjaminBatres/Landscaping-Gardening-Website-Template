@@ -43,5 +43,5 @@ export default function Counter({ max, duration = 2000, ref, symbol }) {
     requestAnimationFrame(animate);
   }, [hasStarted, max, duration]);
 
-  return <span ref={ref}>{count.toLocaleString()}{symbol}</span>
+  return <span ref={ref} className='hidden sm:block'>{count.toLocaleString()}{symbol}</span>
 }

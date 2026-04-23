@@ -74,10 +74,13 @@ export default function AbouSection() {
 
         <div className="flex flex-col-reverse lg:flex-row items-center gap-10 tablet:gap-12 mb-10 tablet:my-10">
           <motion.div
-            initial={{ opacity: 0, x: -150 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ delay: 0.4, duration: 0.7 }}
+            transition={{
+              duration: 0.4,
+              delay: 0.5,
+            }}
             className="lg:w-1/2"
           >
             <Image
@@ -138,6 +141,9 @@ export default function AbouSection() {
             >
               <div>
                 <h2 className="text-6xl mb-2">
+                  <span className="sm:hidden">
+                    {feature.title + feature.symbol}
+                  </span>
                   <Counter
                     max={feature.title}
                     symbol={feature.symbol}

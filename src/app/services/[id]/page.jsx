@@ -1,7 +1,7 @@
 "use client";
 import NavbarSecondary from "@/app/components/NavbarSecondary";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 import React from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 import servicesInfo from "@/app/data/service-info";
@@ -13,6 +13,13 @@ import GetInTouchSection from "@/app/components/GetInTouchSection";
 import Footer from "@/app/components/Footer";
 export default function page() {
   const { id } = useParams();
+  const serviceId = servicesInfo
+    .filter((service) => service.id === id)
+    .map((service) => service.id)
+    .join("");
+  if (id !== serviceId) {
+    notFound();
+  }
 
   return (
     <>
