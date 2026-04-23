@@ -30,10 +30,10 @@ export default function NotFound() {
         </p>
         <Link
           href={"/"}
-          className="flex items-center gap-5 bg-AltPrimary hover:bg-Mint hover:text-AltPrimary transition-all duration-300 py-1 pl-6 pr-1 rounded-full laptop:text-Mint group w-fit font-medium mb-12"
+          className="flex items-center gap-5 bg-AltPrimary tablet:hover:bg-Mint tablet:hover:text-AltPrimary transition-all duration-300 py-1 pl-6 pr-1 rounded-full text-Mint group w-fit font-medium mb-12"
         >
           Back to Home Now
-          <div className="relative w-12 h-12 bg-Mint group-hover:bg-AltPrimary group-hover:text-Mint overflow-hidden rounded-full text-Primary text-2xl">
+          <div className="relative w-12 h-12 bg-Mint tablet:group-hover:bg-AltPrimary tablet:group-hover:text-Mint overflow-hidden rounded-full text-Primary text-2xl">
             <span className="absolute inset-0 flex items-center justify-center transition-transform duration-200 group-hover:translate-x-6 group-hover:-translate-y-6">
               <GoArrowUpRight />
             </span>
