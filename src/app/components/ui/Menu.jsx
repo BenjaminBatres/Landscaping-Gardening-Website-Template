@@ -27,10 +27,13 @@ export default function Menu({ links }) {
           <ul className="flex flex-col gap-4">
             {links.map((link, id) => (
               <li key={id}>
-                <NavLinks link={link} />
+                <button onClick={() => setIsOpen(false)}>
+                  <NavLinks link={link} />
+                </button>
               </li>
             ))}
             <Link
+              onClick={() => setIsOpen(false)}
               href={"/contact"}
               className="flex items-center gap-2 bg-Mint py-3 px-6 rounded-full w-fit text-Primary text-[15px] mt-2"
             >
