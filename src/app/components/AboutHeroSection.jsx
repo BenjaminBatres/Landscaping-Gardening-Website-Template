@@ -21,9 +21,9 @@ export default function AboutHeroSection() {
   const extentedLawnImages = [...lawnImages, ...lawnImages];
 
   return (
-    <div className="bg-White-300 h-screen">
+    <div className="bg-White-300 h-min pb-20">
       <NavbarSecondary />
-      <div className="pt-40 px-7.5">
+      <div className="pt-30 tablet:pt-40 px-5 sm:px-7.5">
         <div className="max-w-290 mx-auto mb-8">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
@@ -61,6 +61,7 @@ export default function AboutHeroSection() {
           </motion.div>
         </div>
       </div>
+
       <Swiper
         spaceBetween={15}
         slidesPerView={1.2}
@@ -86,20 +87,21 @@ export default function AboutHeroSection() {
         loop={true}
         allowTouchMove={false}
         modules={[Autoplay]}
+        className="h-115 w-full"
       >
         {extentedLawnImages.map((img, id) => (
           <SwiperSlide key={id}>
             <motion.div
-              initial={{ opacity: 0, y: 75 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.7 }}
-              className="h-80 sm:h-90 xl:h-120"
+              className="h-full"
             >
               <Image
                 loading="eager"
                 src={img}
                 alt=""
-                className="h-full object-cover rounded-lg"
+                className="h-full w-full object-cover rounded-lg"
               />
             </motion.div>
           </SwiperSlide>

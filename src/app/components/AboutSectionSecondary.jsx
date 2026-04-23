@@ -69,7 +69,7 @@ export default function AboutSectionSecondary() {
   }, [isInView]);
 
   return (
-    <section className="py-20 px-5 sm:px-7.5">
+    <section className="pt-12.5 pb-5 tablet:py-20 px-5 sm:px-7.5">
       <div className="max-w-300 mx-auto">
         <div className="flex flex-col laptop:flex-row gap-2.5 laptop:gap-15 mb-20">
           <div className="w-1/2">

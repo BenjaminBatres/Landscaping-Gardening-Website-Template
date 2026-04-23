@@ -51,7 +51,7 @@ export default function Footer() {
   }, [isInView]);
   return (
     <footer className="py-20 px-5 sm:px-7.5 bg-Primary">
-      <div className="max-w-300 mx-auto">
+      <div className="max-w-247.5 laptop:max-w-300 mx-auto">
         <div className="flex flex-col laptop:flex-row gap-10 justify-between mb-10">
           <div className="laptop:w-1/3">
             <p className="text-Secondary max-w-xl">

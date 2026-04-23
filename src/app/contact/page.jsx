@@ -58,7 +58,7 @@ export default function page() {
             </div>
           </motion.div>
 
-          <ContactForm />
+          <ContactForm imageHeight={"h-54 tablet:h-114"}/>
         </div>
       </div>
       <div className="py-20 px-5 sm:px-7.5">

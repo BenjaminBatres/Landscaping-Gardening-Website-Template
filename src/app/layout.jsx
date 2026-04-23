@@ -7,7 +7,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const PlayfairDisplay = Playfair_Display({
+const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   style: "italic",
 });
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`${geistSans.variable} ${PlayfairDisplay.variable}`}
+      className={`${geistSans.variable} ${playfairDisplay.variable}`}
     >
       <body>
         {/* <ReactLenis /> */}

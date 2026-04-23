@@ -1,10 +1,13 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { IoCheckmark } from "react-icons/io5";
 import Jamie from "../../assets/Leslie-Alexander.png";
 import HightlightsSection from "./HightlightsSection";
 
 export default function Service({ service, id }) {
+  const [loaded, setLoaded] = useState(false);
+
+  
   return (
     <>
       {service.id === id && (
@@ -23,21 +26,23 @@ export default function Service({ service, id }) {
               </div>
             </div>
           </div>
-          <figure className="h-125">
+          <figure className="h-125 relative">
+            {!loaded && <div className="skeleton"></div>}
             <Image
+            onLoad={() => setLoaded(true)}
               src={service.image}
               alt=""
               className="w-full h-full object-cover "
             />
           </figure>
-          <div className="py-20 laptop:py-25 px-5 sm:px-7.5 bg-white">
+          <div className="py-7.5 tablet:py-20 laptop:py-25 px-5 sm:px-7.5 bg-white">
             <div className="max-w-300 mx-auto flex flex-col laptop:flex-row gap-7.5 laptop:gap-15 relative">
               <div className="laptop:w-[40%]">
                 <div className="sticky top-30">
                   <h2 className="text-Primary text-[21px] laptop:text-2xl font-medium mb-4">
                     What's Included
                   </h2>
-                  <div className="grid grid-cols-2 gap-2.5 laptop:gap-4 laptop:grid-cols-1">
+                  <div className="grid tablet:grid-cols-2 gap-2.5 laptop:gap-4 laptop:grid-cols-1">
                     {service.included.map((included, id) => (
                       <div
                         key={id}
@@ -102,9 +107,11 @@ export default function Service({ service, id }) {
                   {service.images.map((img, id) => (
                     <div
                       key={id}
-                      className="tablet:nth-[1]:col-span-2 w-full h-75 tablet:h-full tablet:nth-[1]:h-100"
+                      className="tablet:nth-[1]:col-span-2 w-full h-75 tablet:h-full tablet:nth-[1]:h-100 relative"
                     >
+                      {!loaded && <div className="skeleton rounded-md"></div>}
                       <Image
+                      onLoad={() => setLoaded(true)}
                         src={img}
                         height={1000}
                         width={1000}

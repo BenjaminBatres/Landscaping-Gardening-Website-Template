@@ -17,7 +17,7 @@ export default function ValuesSection() {
   ];
   return (
     <section className="py-20 px-5 sm:px-7.5">
-      <div className="max-w-155 tablet:max-w-300 mx-auto flex flex-col lg:flex-row gap-10 lg:gap-20">
+      <div className="max-w-247.5 laptop:max-w-300 mx-auto flex flex-col lg:flex-row gap-10 lg:gap-20">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -28,14 +28,14 @@ export default function ValuesSection() {
           }}
           className="lg:w-1/2"
         >
-          <figure className="h-170 lg:h-177">
+          <figure className="h-95 table:h-170 lg:h-177">
             <Image
               loading="eager"
               src={MowingLawn}
               height={2000}
               width={2000}
               alt=""
-              className="rounded-lg h-full w-full object-cover object-[0%_60%]"
+              className="rounded-lg h-full w-full object-cover object-[0%_30%] tablet:object-[0%_60%]"
             />
           </figure>
         </motion.div>

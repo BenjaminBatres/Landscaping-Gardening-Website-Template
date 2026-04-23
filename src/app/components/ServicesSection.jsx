@@ -54,7 +54,7 @@ export default function ServicesSection() {
   ];
   return (
     <section className="py-20 px-5 sm:px-7.5 bg-White-300">
-      <div className="max-w-155 laptop:max-w-300 mx-auto">
+      <div className="max-w-247.5 laptop:max-w-300 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ export default function ServicesSection() {
         >
           {services.map((service, id) => (
             <div
-              key={id}
+              key={service.id}
               className={`relative group laptop:cursor-pointer ${service.hidden}`}
             >
               <Image
@@ -99,7 +99,7 @@ export default function ServicesSection() {
                       {service.description}
                     </p>
                     <Link
-                      href={"/"}
+                      href={`/services/${service.id}`}
                       className="py-3 px-8 text-Primary group/link tablet:text-lg bg-Mint w-fit rounded-full flex items-center gap-2"
                     >
                       See Details

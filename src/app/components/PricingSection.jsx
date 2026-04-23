@@ -63,7 +63,7 @@ export default function PricingSection() {
   }, [isInView]);
   return (
     <section className="py-20 px-5 tablet:px-7.5">
-      <div className="max-w-155 tablet:max-w-247.5 laptop:max-w-300 mx-auto">
+      <div className="max-w-247.5 laptop:max-w-300 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 75 }}
           animate={{ opacity: 1, y: 0 }}

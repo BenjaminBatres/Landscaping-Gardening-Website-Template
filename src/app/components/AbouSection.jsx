@@ -69,7 +69,7 @@ export default function AbouSection() {
   }, [isInView]);
   return (
     <section className="py-20 px-5 sm:px-7.5 bg-White-300">
-      <div className="max-w-155 tablet:max-w-300 mx-auto">
+      <div className="max-w-247.5 laptop:max-w-300 mx-auto">
         <TitleSection title={"About Us"} />
 
         <div className="flex flex-col-reverse lg:flex-row items-center gap-10 tablet:gap-12 mb-10 tablet:my-10">
@@ -94,7 +94,7 @@ export default function AbouSection() {
             transition={{ delay: 0.4, duration: 0.7 }}
             className="lg:w-1/2"
           >
-            <h2 className="text-[25px] leading-8 xl:text-[32px]/10 mb-5 text-Primary">
+            <h2 className="text-[25px] leading-8 xl:text-[32px]/10 mb-5 text-Primary font-medium">
               At <span className="font-playfair-display">Greenspire </span>we’ve
               been turning ordinary yards into thriving landscapes since 2015,
               with 1,200+ completed projects. We take pride in delivering

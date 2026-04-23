@@ -1,4 +1,4 @@
-## 🌿 Lawnscaping & Gardening Website Template
+## 🌿 Landscaping & Gardening Website Template
 ![LawnMowigTemplate](./src/app/assets/ReadMe-img.png)
 
 A responsive and modern website template built for landscaping, lawn care, and gardening businesses. This project showcases a clean UI, smooth animations, and a structured layout designed to improve user experience and drive customer engagement.

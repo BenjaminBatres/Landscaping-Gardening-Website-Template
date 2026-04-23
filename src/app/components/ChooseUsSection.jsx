@@ -70,7 +70,7 @@ export default function ChooseUsSection() {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="px-5 sm:px-7.5"
       >
-        <div className="max-w-155 tablet:max-w-300 mx-auto flex flex-col laptop:flex-row laptop:items-center mb-10">
+        <div className="max-w-247.5 laptop:max-w-300 mx-auto flex flex-col laptop:flex-row laptop:items-center mb-10">
           <div className="laptop:w-[65%]">
             <h3 className="text-sm text-Primary py-1 px-3 border border-gray-300 w-fit rounded-full mb-3.5">
               Choose Us
@@ -155,7 +155,7 @@ export default function ChooseUsSection() {
         transition={{ delay: 0.5, duration: 0.6 }}
         className="px-5 sm:px-7.5"
       >
-        <div className="flex max-w-220 laptop:max-w-300 mx-auto gap-4 mt-8">
+        <div className="flex max-w-247.5 laptop:max-w-300 mx-auto gap-4 mt-8">
           <button className="h-11 w-11 flex justify-center items-center bg-AltPrimary text-white rounded-full transition cursor-pointer arrow-left">
             <GoArrowLeft className="text-2xl" />
           </button>

@@ -3,7 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import ContactImg from "../assets/Contact-img.jpg";
 import Image from "next/image";
 
-export default function ContactForm() {
+export default function ContactForm({imageHeight}) {
   const inputFields = [
     {
       label: "Full Name*",
@@ -31,9 +31,9 @@ export default function ContactForm() {
     },
   ];
   return (
-    <div className="flex flex-col laptop:flex-row gap-7.5 laptop:gap-15 rounded-xl bg-white p-5 tablet:p-10">
+    <div className="flex flex-col laptop:flex-row gap-7.5 laptop:gap-15 rounded-xl bg-white p-5 tablet:p-10 ">
       <div className="laptop:w-[45%]">
-        <figure className="laptop:w-115 h-80 sm:h-113 laptop:h-115">
+        <figure className={imageHeight}>
           <Image
             src={ContactImg}
             loading="eager"
