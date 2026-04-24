@@ -56,7 +56,7 @@ export default function BrowseServicesSection({ id }) {
             </h2>
           </div>
           <Link
-            href={"/"}
+            href={"/services"}
             className="flex items-center gap-6 bg-Mint hover:bg-AltPrimary hover:text-Mint transition-all duration-300 py-1 pl-6 pr-1 laptop:pr-0.5 rounded-full text-Primary group w-fit font-medium cursor-pointer"
           >
             View All
@@ -78,8 +78,8 @@ export default function BrowseServicesSection({ id }) {
           className="grid tablet:grid-cols-2 laptop:grid-cols-3 gap-x-4 gap-y-15"
         >
           {servicesInfo
-            .slice(0, 4)
             .filter((service) => service.id !== id)
+            .slice(0, 3)
             .map((service) => (
               <ServiceCard key={service.id} item={item} service={service} />
             ))}
