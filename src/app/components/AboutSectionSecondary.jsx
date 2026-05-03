@@ -141,7 +141,7 @@ export default function AboutSectionSecondary() {
               <div>
                 <h2 className="text-[52px] text-Primary font-medium">
                   <span className="sm:hidden">
-                    {feature.title + feature.symbol}
+                    {info.title + info.symbol}
                   </span>
                   <Counter
                     max={info.title}
