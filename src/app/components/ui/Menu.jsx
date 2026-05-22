@@ -16,20 +16,17 @@ export default function Menu({ links }) {
     if (!lenis) return;
     if (isOpen) {
       lenis.stop();
-      // Optional: Add overflow hidden to prevent fallback desktop trackpad/keys scrolling
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
       lenis.start();
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
-    
-    // Cleanup just in case the component unmounts unexpectedly
+
     return () => {
       if (lenis) lenis.start();
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     };
-  }, [isOpen, lenis])
-
+  }, [isOpen, lenis]);
 
   return (
     <>
