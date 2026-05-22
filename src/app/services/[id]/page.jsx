@@ -1,16 +1,16 @@
 "use client";
-import NavbarSecondary from "@/app/components/NavbarSecondary";
+import NavbarSecondary from "../../components/NavbarSecondary";
 import Link from "next/link";
 import { notFound, useParams } from "next/navigation";
 import React from "react";
 import { MdArrowForwardIos } from "react-icons/md";
-import servicesInfo from "@/app/data/service-info";
-import Service from "@/app/components/ui/Service";
-import StatsSection from "@/app/components/StatsSection";
-import HowWeWorkSection from "@/app/components/HowWeWorkSection";
-import BrowseServicesSection from "@/app/components/BrowseServicesSection";
-import GetInTouchSection from "@/app/components/GetInTouchSection";
-import Footer from "@/app/components/Footer";
+import servicesInfo from "../../data/service-info";
+import Service from "../../components/ui/Service";
+import StatsSection from "../../components/StatsSection";
+import HowWeWorkSection from "../../components/HowWeWorkSection";
+import BrowseServicesSection from "../../components/BrowseServicesSection";
+import GetInTouchSection from "../../components/GetInTouchSection";
+import Footer from "../../components/Footer";
 export default function page() {
   const { id } = useParams();
   const serviceId = servicesInfo
