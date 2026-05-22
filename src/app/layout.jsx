@@ -25,9 +25,11 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${playfairDisplay.variable}`}
     >
       <body>
-        {/* <ReactLenis /> */}
-        <SmoothScroll />
+        <SmoothScroll>
+
         {children}
+
+        </SmoothScroll>
       </body>
 
      

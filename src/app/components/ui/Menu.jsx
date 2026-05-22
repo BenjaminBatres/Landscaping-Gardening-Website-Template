@@ -1,14 +1,36 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { TfiClose } from "react-icons/tfi";
 
 import NavLinks from "./NavLinks";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
+import { useLenis } from "lenis/react";
 
 export default function Menu({ links }) {
   const [isOpen, setIsOpen] = useState(false);
+  const lenis = useLenis();
+
+  useEffect(() => {
+    if (!lenis) return;
+    if (isOpen) {
+      lenis.stop();
+      // Optional: Add overflow hidden to prevent fallback desktop trackpad/keys scrolling
+      document.body.style.overflow = 'hidden';
+    } else {
+      lenis.start();
+      document.body.style.overflow = '';
+    }
+    
+    // Cleanup just in case the component unmounts unexpectedly
+    return () => {
+      if (lenis) lenis.start();
+      document.body.style.overflow = '';
+    };
+  }, [isOpen, lenis])
+
+
   return (
     <>
       <button onClick={() => setIsOpen(true)} className="pr-2 tablet:hidden">
